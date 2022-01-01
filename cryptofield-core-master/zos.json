@@ -1,0 +1,17 @@
+{
+  "zosversion": "2.2",
+  "name": "cryptofield",
+  "version": "0.1.5",
+  "contracts": {
+    "Core": "Core",
+    "HorseData": "HorseData",
+    "BreedTypes": "BreedTypes"
+  },
+  "dependencies": {},
+  "compiler": {
+    "manager": "zos",
+    "compilerSettings": {
+      "optimizer": {}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+build/
+tmp-*/
+node_modules/
+nohup.out
+build_webpack/
+.env
+bridge.log
+built-contracts/
+builtcontracts/
+
+# ZeppelinOS
+zos.dev-*.json
+.zos.session
+*_flat.sol

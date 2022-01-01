@@ -1,0 +1,1075 @@
+{
+  "contracts": {
+    "HorseData": {
+      "address": "0x388141c196E44Bc7A4510509a0Cf92e8Cb88dFe3",
+      "constructorCode": "608060405234801561001057600080fd5b506114bf806100206000396000f300",
+      "bodyBytecodeHash": "eb7c3434627efe7dd120980e3e12e96201bf7769e7b9f67649f5fa52712c974e",
+      "localBytecodeHash": "6d0695b8ee0fb9239ce7249159faa5e4c77946e7a9eb8d54fb9e9749837959fd",
+      "deployedBytecodeHash": "6d0695b8ee0fb9239ce7249159faa5e4c77946e7a9eb8d54fb9e9749837959fd",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_mapping<t_bytes32>": {
+          "id": "t_mapping<t_bytes32>",
+          "valueType": "t_bytes32",
+          "label": "mapping(key => bytes32)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 16002,
+          "type": "t_bool",
+          "src": "757:24:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 16004,
+          "type": "t_bool",
+          "src": "876:25:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 16060,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:35"
+        },
+        {
+          "contract": "HorseData",
+          "path": "0.4-contracts/proxy_deployment/HorseData.sol",
+          "label": "bloodlines",
+          "astId": 4656,
+          "type": "t_mapping<t_bytes32>",
+          "src": "209:47:7"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    },
+    "Core": {
+      "address": "0xBd0c15da7307ab7B5E36CFC2c762218eE2057639",
+      "constructorCode": "608060405261019f805460ff1916905534801561001b57600080fd5b506146b78061002b6000396000f300",
+      "bodyBytecodeHash": "70c217293ecec048d75c1e26aa901a4fc8b01a894ef57da1c91eb0eda3cb000f",
+      "localBytecodeHash": "013e4c3d2466826f24f2b8a5831b6fb5416bb23a8600df63b9679c21ffeb96de",
+      "deployedBytecodeHash": "013e4c3d2466826f24f2b8a5831b6fb5416bb23a8600df63b9679c21ffeb96de",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_string>": {
+          "id": "t_mapping<t_string>",
+          "valueType": "t_string",
+          "label": "mapping(key => string)",
+          "kind": "mapping"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 13783,
+              "type": "t_mapping<t_bool>",
+              "src": "146:32:15"
+            }
+          ]
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_array:2<t_bytes32>": {
+          "id": "t_array:2<t_bytes32>",
+          "valueType": "t_bytes32",
+          "length": "2",
+          "kind": "array",
+          "label": "bytes32[2]"
+        },
+        "t_struct<CryptofieldBase.Horse>": {
+          "id": "t_struct<CryptofieldBase.Horse>",
+          "kind": "struct",
+          "label": "CryptofieldBase.Horse",
+          "members": [
+            {
+              "label": "buyer",
+              "astId": 1729,
+              "type": "t_address",
+              "src": "578:13:4"
+            },
+            {
+              "label": "genotype",
+              "astId": 1731,
+              "type": "t_uint256",
+              "src": "602:16:4"
+            },
+            {
+              "label": "baseValue",
+              "astId": 1733,
+              "type": "t_uint256",
+              "src": "628:17:4"
+            },
+            {
+              "label": "timestamp",
+              "astId": 1735,
+              "type": "t_uint256",
+              "src": "655:17:4"
+            },
+            {
+              "label": "lastTimeSold",
+              "astId": 1737,
+              "type": "t_uint256",
+              "src": "682:20:4"
+            },
+            {
+              "label": "amountOfTimesSold",
+              "astId": 1739,
+              "type": "t_uint256",
+              "src": "712:25:4"
+            },
+            {
+              "label": "horseHash",
+              "astId": 1741,
+              "type": "t_string",
+              "src": "748:16:4"
+            },
+            {
+              "label": "bloodline",
+              "astId": 1743,
+              "type": "t_bytes32",
+              "src": "775:17:4"
+            },
+            {
+              "label": "sex",
+              "astId": 1745,
+              "type": "t_bytes32",
+              "src": "802:11:4"
+            },
+            {
+              "label": "hType",
+              "astId": 1747,
+              "type": "t_bytes32",
+              "src": "823:13:4"
+            }
+          ]
+        },
+        "t_mapping<t_struct<CryptofieldBase.Horse>>": {
+          "id": "t_mapping<t_struct<CryptofieldBase.Horse>>",
+          "valueType": "t_struct<CryptofieldBase.Horse>",
+          "label": "mapping(key => CryptofieldBase.Horse)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_address>": {
+          "id": "t_array:dyn<t_address>",
+          "valueType": "t_address",
+          "length": "dyn",
+          "kind": "array",
+          "label": "address[]"
+        },
+        "t_mapping<t_bytes32>": {
+          "id": "t_mapping<t_bytes32>",
+          "valueType": "t_bytes32",
+          "label": "mapping(key => bytes32)",
+          "kind": "mapping"
+        },
+        "t_array:3<t_uint256>": {
+          "id": "t_array:3<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "3",
+          "kind": "array",
+          "label": "uint256[3]"
+        },
+        "t_struct<StudService.StudInfo>": {
+          "id": "t_struct<StudService.StudInfo>",
+          "kind": "struct",
+          "label": "StudService.StudInfo",
+          "members": [
+            {
+              "label": "inStud",
+              "astId": 6544,
+              "type": "t_bool",
+              "src": "368:11:11"
+            },
+            {
+              "label": "matingPrice",
+              "astId": 6546,
+              "type": "t_uint256",
+              "src": "390:19:11"
+            },
+            {
+              "label": "duration",
+              "astId": 6548,
+              "type": "t_uint256",
+              "src": "419:16:11"
+            }
+          ]
+        },
+        "t_mapping<t_struct<StudService.StudInfo>>": {
+          "id": "t_mapping<t_struct<StudService.StudInfo>>",
+          "valueType": "t_struct<StudService.StudInfo>",
+          "label": "mapping(key => StudService.StudInfo)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 16029,
+          "type": "t_bool",
+          "src": "757:24:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 16031,
+          "type": "t_bool",
+          "src": "876:25:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 16087,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:35"
+        },
+        {
+          "contract": "ERC165",
+          "path": "openzeppelin-eth/contracts/introspection/ERC165.sol",
+          "label": "_supportedInterfaces",
+          "astId": 14109,
+          "type": "t_mapping<t_bool>",
+          "src": "479:53:18"
+        },
+        {
+          "contract": "ERC165",
+          "path": "openzeppelin-eth/contracts/introspection/ERC165.sol",
+          "label": "______gap",
+          "astId": 14153,
+          "type": "t_array:50<t_uint256>",
+          "src": "1191:29:18"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenOwner",
+          "astId": 14521,
+          "type": "t_mapping<t_address>",
+          "src": "763:48:23"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenApprovals",
+          "astId": 14525,
+          "type": "t_mapping<t_address>",
+          "src": "863:52:23"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_ownedTokensCount",
+          "astId": 14529,
+          "type": "t_mapping<t_uint256>",
+          "src": "969:54:23"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "_operatorApprovals",
+          "astId": 14535,
+          "type": "t_mapping<t_bool>",
+          "src": "1074:73:23"
+        },
+        {
+          "contract": "ERC721",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721.sol",
+          "label": "______gap",
+          "astId": 15062,
+          "type": "t_array:50<t_uint256>",
+          "src": "11487:29:23"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokens",
+          "astId": 15082,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "305:50:24"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokensIndex",
+          "astId": 15086,
+          "type": "t_mapping<t_uint256>",
+          "src": "421:53:24"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokens",
+          "astId": 15089,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "531:28:24"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokensIndex",
+          "astId": 15093,
+          "type": "t_mapping<t_uint256>",
+          "src": "626:51:24"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "______gap",
+          "astId": 15370,
+          "type": "t_array:50<t_uint256>",
+          "src": "5492:29:24"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_name",
+          "astId": 15418,
+          "type": "t_string",
+          "src": "264:21:26"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_symbol",
+          "astId": 15420,
+          "type": "t_string",
+          "src": "308:23:26"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_tokenURIs",
+          "astId": 15424,
+          "type": "t_mapping<t_string>",
+          "src": "373:45:26"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "______gap",
+          "astId": 15553,
+          "type": "t_array:50<t_uint256>",
+          "src": "2552:29:26"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
+          "label": "minters",
+          "astId": 13875,
+          "type": "t_struct<Roles.Role>",
+          "src": "264:26:16"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 13974,
+          "type": "t_array:50<t_uint256>",
+          "src": "990:29:16"
+        },
+        {
+          "contract": "ERC721MetadataMintable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721MetadataMintable.sol",
+          "label": "______gap",
+          "astId": 15623,
+          "type": "t_array:50<t_uint256>",
+          "src": "1016:29:27"
+        },
+        {
+          "contract": "PauserRole",
+          "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+          "label": "pausers",
+          "astId": 13994,
+          "type": "t_struct<Roles.Role>",
+          "src": "264:26:17"
+        },
+        {
+          "contract": "PauserRole",
+          "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+          "label": "______gap",
+          "astId": 14093,
+          "type": "t_array:50<t_uint256>",
+          "src": "990:29:17"
+        },
+        {
+          "contract": "Pausable",
+          "path": "openzeppelin-eth/contracts/lifecycle/Pausable.sol",
+          "label": "_paused",
+          "astId": 14179,
+          "type": "t_bool",
+          "src": "318:28:20"
+        },
+        {
+          "contract": "Pausable",
+          "path": "openzeppelin-eth/contracts/lifecycle/Pausable.sol",
+          "label": "______gap",
+          "astId": 14252,
+          "type": "t_array:50<t_uint256>",
+          "src": "1260:29:20"
+        },
+        {
+          "contract": "ERC721Pausable",
+          "path": "openzeppelin-eth/contracts/token/ERC721/ERC721Pausable.sol",
+          "label": "______gap",
+          "astId": 15713,
+          "type": "t_array:50<t_uint256>",
+          "src": "885:29:28"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 14388,
+          "type": "t_address",
+          "src": "301:22:22"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 14493,
+          "type": "t_array:50<t_uint256>",
+          "src": "2057:29:22"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "horseType",
+          "astId": 1712,
+          "type": "t_bytes32",
+          "src": "215:17:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "gender",
+          "astId": 1714,
+          "type": "t_bytes32",
+          "src": "238:21:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "gen",
+          "astId": 1718,
+          "type": "t_array:2<t_bytes32>",
+          "src": "291:22:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "bloodlineCounter",
+          "astId": 1723,
+          "type": "t_uint256",
+          "src": "361:24:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "breedingContract",
+          "astId": 1725,
+          "type": "t_address",
+          "src": "392:24:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "horseDataContract",
+          "astId": 1727,
+          "type": "t_address",
+          "src": "422:34:4"
+        },
+        {
+          "contract": "CryptofieldBase",
+          "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+          "label": "horses",
+          "astId": 1752,
+          "type": "t_mapping<t_struct<CryptofieldBase.Horse>>",
+          "src": "849:39:4"
+        },
+        {
+          "contract": "Token",
+          "path": "0.4-contracts/proxy_deployment/Token.sol",
+          "label": "gopcreator",
+          "astId": 7347,
+          "type": "t_address",
+          "src": "189:18:13"
+        },
+        {
+          "contract": "Token",
+          "path": "0.4-contracts/proxy_deployment/Token.sol",
+          "label": "minters",
+          "astId": 7350,
+          "type": "t_array:dyn<t_address>",
+          "src": "213:25:13"
+        },
+        {
+          "contract": "Token",
+          "path": "0.4-contracts/proxy_deployment/Token.sol",
+          "label": "pausers",
+          "astId": 7353,
+          "type": "t_array:dyn<t_address>",
+          "src": "244:25:13"
+        },
+        {
+          "contract": "Auctions",
+          "path": "0.4-contracts/proxy_deployment/Auctions.sol",
+          "label": "nft",
+          "astId": 9,
+          "type": "t_address",
+          "src": "215:15:0"
+        },
+        {
+          "contract": "usingOraclize",
+          "path": "0.4-contracts/proxy_deployment/usingOraclize.sol",
+          "label": "OAR",
+          "astId": 8459,
+          "type": "t_address",
+          "src": "11268:25:14"
+        },
+        {
+          "contract": "usingOraclize",
+          "path": "0.4-contracts/proxy_deployment/usingOraclize.sol",
+          "label": "oraclize",
+          "astId": 8461,
+          "type": "t_address",
+          "src": "11300:18:14"
+        },
+        {
+          "contract": "usingOraclize",
+          "path": "0.4-contracts/proxy_deployment/usingOraclize.sol",
+          "label": "oraclize_network_name",
+          "astId": 12708,
+          "type": "t_string",
+          "src": "39720:28:14"
+        },
+        {
+          "contract": "usingOraclize",
+          "path": "0.4-contracts/proxy_deployment/usingOraclize.sol",
+          "label": "oraclize_randomDS_args",
+          "astId": 12880,
+          "type": "t_mapping<t_bytes32>",
+          "src": "42738:48:14"
+        },
+        {
+          "contract": "usingOraclize",
+          "path": "0.4-contracts/proxy_deployment/usingOraclize.sol",
+          "label": "oraclize_randomDS_sessionKeysHashVerified",
+          "astId": 12884,
+          "type": "t_mapping<t_bool>",
+          "src": "42792:64:14"
+        },
+        {
+          "contract": "StudService",
+          "path": "0.4-contracts/proxy_deployment/StudService.sol",
+          "label": "ALLOWED_TIMEFRAMES",
+          "astId": 6539,
+          "type": "t_array:3<t_uint256>",
+          "src": "269:37:11"
+        },
+        {
+          "contract": "StudService",
+          "path": "0.4-contracts/proxy_deployment/StudService.sol",
+          "label": "horsesInStud",
+          "astId": 6542,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "313:22:11"
+        },
+        {
+          "contract": "StudService",
+          "path": "0.4-contracts/proxy_deployment/StudService.sol",
+          "label": "studs",
+          "astId": 6553,
+          "type": "t_mapping<t_struct<StudService.StudInfo>>",
+          "src": "448:43:11"
+        },
+        {
+          "contract": "StudService",
+          "path": "0.4-contracts/proxy_deployment/StudService.sol",
+          "label": "horseIndex",
+          "astId": 6557,
+          "type": "t_mapping<t_uint256>",
+          "src": "497:47:11"
+        },
+        {
+          "contract": "StudService",
+          "path": "0.4-contracts/proxy_deployment/StudService.sol",
+          "label": "currentlyInStud",
+          "astId": 6561,
+          "type": "t_mapping<t_bool>",
+          "src": "1376:49:11"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "MinterRole",
+            "path": "openzeppelin-eth/contracts/access/roles/MinterRole.sol",
+            "label": "minters",
+            "astId": 13875,
+            "type": "t_struct<Roles.Role>",
+            "src": "264:26:16"
+          },
+          {
+            "contract": "PauserRole",
+            "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+            "label": "pausers",
+            "astId": 13994,
+            "type": "t_struct<Roles.Role>",
+            "src": "264:26:17"
+          },
+          {
+            "contract": "CryptofieldBase",
+            "path": "0.4-contracts/proxy_deployment/CryptofieldBase.sol",
+            "label": "horses",
+            "astId": 1752,
+            "type": "t_mapping<t_struct<CryptofieldBase.Horse>>",
+            "src": "849:39:4"
+          },
+          {
+            "contract": "StudService",
+            "path": "0.4-contracts/proxy_deployment/StudService.sol",
+            "label": "studs",
+            "astId": 6553,
+            "type": "t_mapping<t_struct<StudService.StudInfo>>",
+            "src": "448:43:11"
+          }
+        ],
+        "storageDiff": []
+      }
+    },
+    "BreedTypes": {
+      "address": "0x7986A82Fd31016CE9AAC3C6B3244892E23403b6C",
+      "constructorCode": "608060405234801561001057600080fd5b50613dc7806100206000396000f300",
+      "bodyBytecodeHash": "f2db024ffe96f822909c2c40739debed73b603822576f2633a94404672633466",
+      "localBytecodeHash": "7ce50b1f0937eaa75d68bd5a18074ba9360a532a6abb940e449e9eef14423acf",
+      "deployedBytecodeHash": "7ce50b1f0937eaa75d68bd5a18074ba9360a532a6abb940e449e9eef14423acf",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_struct<Breeding.HorseBreed>": {
+          "id": "t_struct<Breeding.HorseBreed>",
+          "kind": "struct",
+          "label": "Breeding.HorseBreed",
+          "members": [
+            {
+              "label": "parents",
+              "astId": 720,
+              "type": "t_array:2<t_uint256>",
+              "src": "671:18:2"
+            },
+            {
+              "label": "offsprings",
+              "astId": 723,
+              "type": "t_array:dyn<t_uint256>",
+              "src": "699:20:2"
+            },
+            {
+              "label": "offspringCounter",
+              "astId": 727,
+              "type": "t_uint256",
+              "src": "762:24:2"
+            },
+            {
+              "label": "grandparents",
+              "astId": 731,
+              "type": "t_mapping<t_bool>",
+              "src": "797:37:2"
+            }
+          ]
+        },
+        "t_array:2<t_uint256>": {
+          "id": "t_array:2<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "2",
+          "kind": "array",
+          "label": "uint256[2]"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_struct<Breeding.HorseBreed>>": {
+          "id": "t_mapping<t_struct<Breeding.HorseBreed>>",
+          "valueType": "t_struct<Breeding.HorseBreed>",
+          "label": "mapping(key => Breeding.HorseBreed)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_mapping<t_bytes32>": {
+          "id": "t_mapping<t_bytes32>",
+          "valueType": "t_bytes32",
+          "label": "mapping(key => bytes32)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 16002,
+          "type": "t_bool",
+          "src": "757:24:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 16004,
+          "type": "t_bool",
+          "src": "876:25:35"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 16060,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:35"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 14361,
+          "type": "t_address",
+          "src": "301:22:22"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 14466,
+          "type": "t_array:50<t_uint256>",
+          "src": "2057:29:22"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "poolAddress",
+          "astId": 708,
+          "type": "t_address",
+          "src": "484:19:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "nonce",
+          "astId": 710,
+          "type": "t_uint256",
+          "src": "510:13:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "core",
+          "astId": 712,
+          "type": "t_address",
+          "src": "530:9:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "breedTypes",
+          "astId": 714,
+          "type": "t_address",
+          "src": "545:21:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "studService",
+          "astId": 716,
+          "type": "t_address",
+          "src": "572:25:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "horseBreedById",
+          "astId": 736,
+          "type": "t_mapping<t_struct<Breeding.HorseBreed>>",
+          "src": "904:54:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "offspringsOf",
+          "astId": 742,
+          "type": "t_mapping<t_bool>",
+          "src": "1005:66:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "studOwnerPercentage",
+          "astId": 746,
+          "type": "t_mapping<t_uint256>",
+          "src": "1153:56:2"
+        },
+        {
+          "contract": "Breeding",
+          "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+          "label": "prizePoolPercentage",
+          "astId": 750,
+          "type": "t_mapping<t_uint256>",
+          "src": "1291:56:2"
+        },
+        {
+          "contract": "BreedTypes",
+          "path": "0.4-contracts/proxy_deployment/BreedTypes.sol",
+          "label": "horseBreed",
+          "astId": 107,
+          "type": "t_mapping<t_bytes32>",
+          "src": "513:45:1"
+        },
+        {
+          "contract": "BreedTypes",
+          "path": "0.4-contracts/proxy_deployment/BreedTypes.sol",
+          "label": "breedTypeMatrix",
+          "astId": 111,
+          "type": "t_mapping<t_bytes32>",
+          "src": "626:50:1"
+        },
+        {
+          "contract": "BreedTypes",
+          "path": "0.4-contracts/proxy_deployment/BreedTypes.sol",
+          "label": "breeding",
+          "astId": 113,
+          "type": "t_address",
+          "src": "683:17:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "Breeding",
+            "path": "0.4-contracts/proxy_deployment/Breeding.sol",
+            "label": "horseBreedById",
+            "astId": 736,
+            "type": "t_mapping<t_struct<Breeding.HorseBreed>>",
+            "src": "904:54:2"
+          }
+        ],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "cryptofield/Core": [
+      {
+        "address": "0xe68ea71c936e86539a38bbb33134e39d3c5c8aaf",
+        "version": "0.1.5",
+        "implementation": "0xBd0c15da7307ab7B5E36CFC2c762218eE2057639"
+      }
+    ],
+    "cryptofield/SaleAuction": [
+      {
+        "address": "0x8824711e1e4e2b63087e6e29bda16a3ccbe6d21a",
+        "version": "0.1.4",
+        "implementation": "0x72819184705a57AB8Eb1D745E523e0e03D14FbCb"
+      }
+    ],
+    "cryptofield/GOPCreator": [
+      {
+        "address": "0xb308455aa4cada710e3a4f275a4218786ca55b9e",
+        "version": "0.1.4",
+        "implementation": "0x5335237149dE4bda1e196Da441405838B5507F7B"
+      }
+    ],
+    "cryptofield/HorseData": [
+      {
+        "address": "0x07c26e40139633e1187b1c9804441db898aed931",
+        "version": "0.1.0",
+        "implementation": "0xf860cddbf01b0a6fca098839394550a6ddb83606"
+      }
+    ],
+    "cryptofield/FoundationAuctions": [
+      {
+        "address": "0xC32731DE14c22bF8E7Ca59fC4d7e72E74a84B580",
+        "version": "0.1.4",
+        "implementation": "0xb9ebE49B2EB454191fC125E5EfE544FBbFcE70E3"
+      }
+    ],
+    "cryptofield/BreedTypes": [
+      {
+        "address": "0x831A7365310D08AA5a65046CF7dE939A06C85147",
+        "version": "0.1.4",
+        "implementation": "0xD0dEf503dfD7224473Ac1Ab523D60e62F7593399"
+      }
+    ],
+    "cryptofield/StudServiceV2": [
+      {
+        "address": "0x7e0d9BeA5005E5c2014DF3bf66b14610672aD7FC",
+        "version": "0.1.4",
+        "implementation": "0x697e23F2B6cc3129a756Fa8BC1fBb8dF2F9c1273"
+      }
+    ],
+    "cryptofield/Breeding": [
+      {
+        "address": "0x33BCE229c9199D2A70463555d6bf3359caBc646c",
+        "version": "0.1.4",
+        "implementation": "0xaFBbe8c36d1e7695536A79797a4Bc0551Ed44210"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.1.5",
+  "proxyAdmin": {
+    "address": "0x873257fdb7193035E8C5F9dF056521c86cD06937"
+  }
+}
